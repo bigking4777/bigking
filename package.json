@@ -1,0 +1,21 @@
+{
+  "name": "componentdocumentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-register-components": "^1.8.2",
+    "vuepress": "^1.8.2",
+    "vuepress-theme-reco": "^1.6.10",
+    "vuepress-theme-vdoing": "^1.8.5"
+  },
+  "dependencies": {
+    "ytdemo-ui": "^0.1.7"
+  }
+}
