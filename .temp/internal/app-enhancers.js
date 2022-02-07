@@ -2,7 +2,7 @@ import m0 from "E:\\laragon\\www\\ComponentDocumentation\\.temp\\app-enhancers\\
 import m1 from "E:\\laragon\\www\\ComponentDocumentation\\.temp\\app-enhancers\\1.js"
 import m2 from "E:\\laragon\\www\\ComponentDocumentation\\.temp\\app-enhancers\\2.js"
 import m3 from "E:\\laragon\\www\\ComponentDocumentation\\.temp\\app-enhancers\\data-block.js"
-import m4 from "E:\\laragon\\www\\ComponentDocumentation\\.temp\\app-enhancers\\global-components-10.js"
+import m4 from "E:\\laragon\\www\\ComponentDocumentation\\.temp\\app-enhancers\\global-components-27.js"
 import m5 from "E:\\laragon\\www\\ComponentDocumentation\\.temp\\app-enhancers\\3.js"
 import m6 from "E:\\laragon\\www\\ComponentDocumentation\\.temp\\app-enhancers\\4.js"
 import m7 from "E:\\laragon\\www\\ComponentDocumentation\\.temp\\app-enhancers\\5.js"

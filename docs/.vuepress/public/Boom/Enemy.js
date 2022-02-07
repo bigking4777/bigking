@@ -8,10 +8,10 @@ export const Enemy = function () {
     this.enemyW=30;
     this.enemyH=30;//敌人图片的大小
     var type;
-
-    this.init = function () {
+    this.game
+    this.init = function (game) {
         enemy = new Image();
-
+        this.game = game
 
         type = Math.floor(Math.random()*7);//随机敌人的类型
 
@@ -228,23 +228,21 @@ export const Enemy = function () {
         // console.log(BoomX,BoomY,'1231213')
     };//拿到炸弹爆炸数据，防止怪物穿过炸弹
 
-    this.collision=function (x,y,z) {
+    this.collision=function (x,y,z,score) {
         var x1 = x;
         var y1 = y;
         var A = 40*z;
         var z = this.getX();//怪物横坐标
         var w = this.getY();//怪物纵坐标
-
+        
         if(((x1+40<=z&&z<=x1+40+A)&&(y1<=w&&w<=y1+40))||
             ((x1<=z&&z<=x1+40)&&(y1+40<=w&&w<=y1+40+A))||
             ((x1-A<=z&&z<=x1)&&(y1<=w&&w<=y1+40))||
             ((x1<=z&&z<=x1+40)&&(y1-A<=w&&w<=y1))){
 
-            score.scorestart+=50;//分数加50
-            score.clear();//清空分数面板
-            score.init();//重新显示实时分数
+                score.addScore(60)
 
-            game.enemylive-=1;
+            this.game.enemylive-=1;
             this.resetBoom();
 
         }
@@ -258,7 +256,7 @@ export const Enemy = function () {
             return
         }
          enemy.src= "";
-        if(game.enemylive==0){
+        if(this.game.enemylive==0){
             var gameover = document.getElementsByClassName("gameOver")[0];
             gameover.className = 'gameOver show'
         }

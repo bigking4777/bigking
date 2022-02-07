@@ -16,6 +16,6 @@
     "vuepress-theme-vdoing": "^1.8.5"
   },
   "dependencies": {
-    "ytdemo-ui": "^0.1.7"
+    "ytdemo-ui": "^0.1.9"
   }
 }

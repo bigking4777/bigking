@@ -7,14 +7,14 @@ module.exports = {
       authorAvatar: '/hero.jpg',
       logo: '/hero.jpg',
       nav : [
-          { text: 'About Me', link: '/pages/' },
+          // { text: 'About Me', link: '/pages/' },
           { text: '组件库', link: '/components/home' },
           { text: '游戏', link: '/game/' },
       ],
       sidebar: {
         "/components/":[
           {
-            title: "快速启动！",
+            title: "快速启动!",
             collapsable: true,
             path: "home",
           },
@@ -24,7 +24,7 @@ module.exports = {
             path: "ticket",
           },
           {
-            title: "奇怪的按钮",
+            title: "按钮",
             collapsable: true,
             path: "btn",
           },
@@ -38,6 +38,21 @@ module.exports = {
             collapsable: true,
             path: "DragBox",
           },
+          {
+            title: "拖拽echarts关系图!",
+            collapsable: true,
+            path: "graph",
+          },
+          {
+            title: "利用clip-path实现一些动效",
+            collapsable: true,
+            path: "clip",
+          },
+          {
+            title: "文字效果合集",
+            collapsable: true,
+            path: "text",
+          }
         ]
       },
       blogConfig: {

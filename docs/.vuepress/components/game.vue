@@ -3,9 +3,9 @@
     <div class="all">
       <div class="left">
         <div class="left-title">
-          <h1>第一关，过关条件：分数达到50</h1>
+          <h1>过关条件：分数达到500</h1>
         </div>
-        <h2>道具效果</h2>
+        <div>道具效果</div>
         <div class="allTool">
 
           <div class="tool">
@@ -50,7 +50,7 @@
           </div>
 
         </div>
-        <h2>人物操作</h2>
+        <div>人物操作</div>
         <div class="all-operate">
           <div class="operate">
             <div class="operate-top">
@@ -99,18 +99,25 @@
           </div>
 
         </div>
+        <div style="font-size:25px">
+          时间：{{time.num}}
 
+        </div>
+        <div  style="font-size:25px">
+
+        分数：{{score.num}}
+      </div>
       </div>
       <div
         class="main"
         id="box"
       >
+      
         <canvas
           id="mycanvas"
           width=680
           height=600
         >
-
         </canvas>
       </div>
 
@@ -122,8 +129,9 @@
         <div
           class="btn"
           id="nextPass"
+          @click="reset"
         >
-          下一关
+         重置
         </div>
       </div>
     </div>
@@ -133,17 +141,19 @@
         <div
           class="btn"
           id="timeBack"
+          @click="reset"
         >
           返回
         </div>
       </div>
     </div>
     <div class="playerOver">
-      <div class="title">人物死亡游戏结束</div>
+      <div class="title">游戏结束</div>
       <div class="next">
         <div
           class="btn"
           id="playerBack"
+          @click="reset"
         >
           返回
         </div>
@@ -159,28 +169,76 @@ import { Time } from "../public/Boom/Time";
 import { Score } from "../public/Boom/Score";
 export default {
   data() {
-    return {};
+    return {
+      game:{
+        run:null,
+        runEnemy:null,
+        getProp:null,
+        getplayer:null,
+      },
+      time:{
+        getTime:null,
+        run:null,
+        num:0
+      },
+      score:{
+        getScore:null,
+        num:0
+      }
+      
+    };
+  },
+  watch:{
+    'time.num':{
+      handler(val){
+        if(!val){
+          var timeover = document.getElementsByClassName("timeOver")[0];
+            timeover.className = 'timeOver show'
+            clearInterval(time);
+        }
+      }
+    },
+    'score.num':{
+      handler(val){
+        console.log(123);
+        if(val>=300){
+           var gameover = document.getElementsByClassName("gameOver")[0];
+            gameover.className = 'gameOver show'
+        }
+      }
+    }
   },
   mounted() {
     this.init();
   },
+  beforeDestroy(){
+    Object.keys(this.game).forEach(res=>{
+      clearInterval(this.game[res])
+    })
+    Object.keys(this.time).forEach(res=>{
+      clearInterval(this.time[res])
+    })
+  },
   methods: {
     init() {
+      
       var game = new Game(); //这里是游戏主逻辑
-      var enemyNum = 2; //怪物最多数量
-      var minNum = 1; //怪物最少数量
-      game.init(1, enemyNum, minNum); //初始化游戏
+      var score = new Score();
+      var time = new Time();
+      var enemyNum = 20; //怪物最多数量
+      
+      game.init(1, enemyNum, enemyNum,score,game); //初始化游戏
       console.log(game);
-      setInterval(() => {
-        game.run();
+      this.game.run = setInterval(() => {
+        game.run(score,time);
       }, 100); //定时执行可以画出游戏数据在canvas标签上
-      setInterval(() => {
+      this.game.runEnemy = setInterval(() => {
         game.runEnemy();
       }, 1000); //画出怪物走动方向
-      setInterval(() => {
+      this.game.getProp = setInterval(() => {
         game.getProp();
-      }, 300); //随机掉落道具
-      setInterval(() => {
+      }, 6000); //随机掉落道具
+      this.game.getplayer = setInterval(() => {
         game.getplayer();
       }, 10); //实时获得人物的坐标
       document.onkeydown = function (ev) {
@@ -189,16 +247,30 @@ export default {
       document.onkeyup = function (ev) {
         game.onkeyup(ev.keyCode);
       }; //获取键盘松开事件
-      var time = new Time();
-      time.init(); //设置时间
-      setInterval(() => {
-        time.run()
-      }, 1000); //判断时间是否超时
-      var score = new Score();
-      var passScore = 50; //过关分数设置
-      score.pass = passScore;
-      score.init(passScore);
+      
+      this.time.getTime = setInterval(()=>{
+        this.time.num = time.getTime()
+      },1000) 
+      this.time.run = setInterval(()=>{
+        time.setTime()
+      },1000) 
+      
+      score.init(0); //过关分数设置
+      this.score.getScore = setInterval(()=>{
+        this.score.num = score.getScore()
+      },100)
     },
+    reset(){
+      var playerover = document.getElementsByClassName("playerOver")[0];
+      playerover.className = 'playerOver'
+      Object.keys(this.game).forEach(res=>{
+      clearInterval(this.game[res])
+    })
+    Object.keys(this.time).forEach(res=>{
+      clearInterval(this.time[res])
+    })
+      this.init()
+    }
   },
 };
 </script>
@@ -220,7 +292,6 @@ export default {
 }
 
 #mycanvas {
-  margin-top: 100px;
 }
 .gameOver {
   position: absolute;
@@ -291,13 +362,13 @@ export default {
   justify-content: center;
   align-items: center;
   font-size: 10px;
+  cursor: pointer;
 }
 .all {
   display: flex;
 }
 .left {
   width: 680px;
-  height: 706px;
   background: #fe9738;
 }
 .left h2 {

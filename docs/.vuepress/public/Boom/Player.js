@@ -19,8 +19,10 @@ export const Player = function () {
     var playerUp ;
     var playerLeft ;
     var playerRight ;
-    this.init = function (x) {
+    this.game
+    this.init = function (x,game) {
         playerNum =x;
+        this.game = game
         // console.log(playerNum,'num');
         playerDown = ['../img/players'+playerNum+'/down_01.png', '../img/players'+playerNum+'/down_02.png', '../img/players'+playerNum+'/down_03.png', '../img/players'+playerNum+'/down_04.png'];//向下移动
 
@@ -282,11 +284,10 @@ export const Player = function () {
         }
 
     };
-    this.getProp = function (props) {
+    this.getProp = function (props,score,time) {
         for (var i = 0;i<props.length;i++){
             if (playerX<(props[i].propX+props[i].propW)&&(playerX+playerW)>props[i].propX
                 &&playerY<(props[i].propY+props[i].propH)&&(playerY+playerH)>props[i].propY){
-                console.log('get');
                 if(props[i].type==4){
                     speed+=2;
                 }
@@ -295,19 +296,16 @@ export const Player = function () {
                         speed+=2;
                         break;
                     case 5:
-                        Game.BoomsNum+=1;
+                        this.game.BoomsNum+=1;
                         break;
                     case 1:
-                        Game.Boomlong+=1;
+                        this.game.Boomlong+=1;
                         break;
                     case 3:
-                        Time.addTime=1;
-                        // console.log(time.timeW,'time');
+                        time.addTime();
                         break;
                     case 2:
-                        Score.scorestart+=60;
-                        Score.clear();
-                        Score.init();
+                        score.addScore(60)
                         break;
 
 

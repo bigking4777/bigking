@@ -16,8 +16,12 @@ export const Game = function () {
     // var enemyNum = Math.floor((Math.random()*50)+3);//随机怪物数量
     // var enemyNum = 1
     var playerNum;
-    this.init = function (x, y, z) {
+    this.score
+    this.game
+    this.init = function (x, y, z,score,game,time) {
         that = this;
+        this.score = score
+        this.game = game
         playerNum = x;
         enemyNum = Math.floor((Math.random() * y) + z);//随机怪物数量
         this.initGame();//初始化游戏
@@ -25,7 +29,7 @@ export const Game = function () {
         this.initMap();//初始化地图
 
 
-        this.initPlayer();//初始化玩家
+        this.initPlayer(score,time);//初始化玩家
 
         this.initprop();//初始化道具
 
@@ -49,7 +53,7 @@ export const Game = function () {
 
     this.initPlayer = function () {
         player = new Player();
-        player.init(playerNum);
+        player.init(playerNum,this.game);
         player.setMaplisten(this.mapListen);//这里我设置地图监听，可以判断人物是否撞墙
         player.setCells(this.cellsListen);//防止人物穿墙
         player.setBoomlisten(this.boomListener);//设置炸弹监听
@@ -66,7 +70,7 @@ export const Game = function () {
 
     this.initEnemy = function () {
         enemy = new Enemy();
-        enemy.init();
+        enemy.init(this.game);
         enemys.push(enemy);
         that.enemylive = enemys.length;
         // console.log(enemys,'enemys')
@@ -84,11 +88,11 @@ export const Game = function () {
     };//初始化道具
     this.getProp = function () {
         let type = Math.floor(Math.random() * 20)
-        if (type == 6) {
+        if (type) {
             this.initprop()
         }
     }//随机掉落道具
-    this.run = function () {
+    this.run = function (score,time) {
         map.run(ctx);
         player.run(ctx);
         for (var i = 0; i < enemyNum; i++) {
@@ -98,7 +102,7 @@ export const Game = function () {
         for (var i = 0; i < bombs.length; i++) {
                 bombs[i].run(ctx, i)
         }
-        player.getProp(props);
+        player.getProp(props,score,time);
         for (var i = 0; i < props.length; i++) {
             props[i].run(ctx);
         }
@@ -168,7 +172,7 @@ export const Game = function () {
         map.resetMap(bombX, bombY, getNum);//判断炸弹是否炸到墙壁
 
         for (var i = 0; i < enemyNum; i++) {
-            enemys[i].collision(bombX, bombY, getNum);
+            enemys[i].collision(bombX, bombY, getNum,that.score);
         }
         player.iscollision(bombX, bombY, getNum);
         BoomX = null;
