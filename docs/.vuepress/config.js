@@ -10,6 +10,7 @@ module.exports = {
           // { text: 'About Me', link: '/pages/' },
           { text: '组件库', link: '/components/home' },
           { text: '游戏', link: '/game/' },
+          {text:'坤坤工具',link:'/kunkun/'}
       ],
       sidebar: {
         "/components/":[

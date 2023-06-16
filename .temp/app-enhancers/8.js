@@ -1,1 +1,1 @@
-export { default } from "E:\\laragon\\www\\ComponentDocumentation\\node_modules\\@vuepress\\plugin-blog\\lib\\client\\classification.js"
+export { default } from "E:\\laragon\\www\\ComponentDocumentation\\node_modules\\@vuepress\\plugin-blog\\lib\\client\\pagination.js"

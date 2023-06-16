@@ -12,10 +12,12 @@
   "devDependencies": {
     "@vuepress/plugin-register-components": "^1.8.2",
     "vuepress": "^1.8.2",
-    "vuepress-theme-reco": "^1.6.10",
     "vuepress-theme-vdoing": "^1.8.5"
   },
   "dependencies": {
+    "async-validator": "^1.11.5",
+    "element-ui": "^2.15.13",
+    "vuepress-theme-reco": "^1.6.10",
     "ytdemo-ui": "^0.1.9"
   }
 }

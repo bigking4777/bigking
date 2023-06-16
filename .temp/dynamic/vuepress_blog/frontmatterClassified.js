@@ -11,12 +11,21 @@ export default {
         "v-4014f6f4"
       ]
     },
-    "drag": {
-      "key": "drag",
+    "echarts": {
+      "key": "echarts",
       "scope": "tags",
-      "path": "/tag/drag/",
+      "path": "/tag/echarts/",
       "pageKeys": [
-        "v-28ef0e24"
+        "v-dead3780"
+      ]
+    },
+    "css": {
+      "key": "css",
+      "scope": "tags",
+      "path": "/tag/css/",
+      "pageKeys": [
+        "v-c4c2b404",
+        "v-3a78ea44"
       ]
     },
     "btn": {
@@ -27,21 +36,12 @@ export default {
         "v-98e0ed38"
       ]
     },
-    "css": {
-      "key": "css",
+    "drag": {
+      "key": "drag",
       "scope": "tags",
-      "path": "/tag/css/",
+      "path": "/tag/drag/",
       "pageKeys": [
-        "v-3a78ea44",
-        "v-c4c2b404"
-      ]
-    },
-    "echarts": {
-      "key": "echarts",
-      "scope": "tags",
-      "path": "/tag/echarts/",
-      "pageKeys": [
-        "v-dead3780"
+        "v-28ef0e24"
       ]
     },
     "ticket": {
@@ -53,6 +53,14 @@ export default {
         "v-53a283ed",
         "v-b80bdf66"
       ]
+    },
+    "kunkun": {
+      "key": "kunkun",
+      "scope": "tags",
+      "path": "/tag/kunkun/",
+      "pageKeys": [
+        "v-e5ffd4a6"
+      ]
     }
   },
   "categories": {
@@ -62,13 +70,14 @@ export default {
       "path": "/categories/components/",
       "pageKeys": [
         "v-4014f6f4",
-        "v-28ef0e24",
-        "v-98e0ed38",
-        "v-3a78ea44",
         "v-dead3780",
         "v-c4c2b404",
+        "v-98e0ed38",
+        "v-28ef0e24",
+        "v-3a78ea44",
         "v-7d378f1e",
         "v-53a283ed",
+        "v-e5ffd4a6",
         "v-b80bdf66"
       ]
     }

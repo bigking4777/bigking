@@ -8,47 +8,6 @@ export const siteData = {
   "headTags": [],
   "pages": [
     {
-      "title": "svg",
-      "frontmatter": {
-        "title": "svg",
-        "date": "2021-12-13T00:00:00.000Z",
-        "categories": [
-          "components"
-        ],
-        "tags": [
-          "svg"
-        ]
-      },
-      "regularPath": "/components/Dashboard.html",
-      "relativePath": "components/Dashboard.md",
-      "key": "v-4014f6f4",
-      "path": "/components/Dashboard.html"
-    },
-    {
-      "title": "拖拽盒子",
-      "frontmatter": {
-        "title": "拖拽盒子",
-        "date": "2021-06-07T00:00:00.000Z",
-        "categories": [
-          "components"
-        ],
-        "tags": [
-          "drag"
-        ]
-      },
-      "regularPath": "/components/DragBox.html",
-      "relativePath": "components/DragBox.md",
-      "key": "v-28ef0e24",
-      "path": "/components/DragBox.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "推荐使用vue-draggable",
-          "slug": "推荐使用vue-draggable"
-        }
-      ]
-    },
-    {
       "title": "Home",
       "frontmatter": {
         "home": true,
@@ -69,45 +28,21 @@ export const siteData = {
       "path": "/"
     },
     {
-      "title": "一些奇怪的按钮",
+      "title": "svg",
       "frontmatter": {
-        "title": "一些奇怪的按钮",
-        "date": "2021-11-07T00:00:00.000Z",
+        "title": "svg",
+        "date": "2021-12-13T00:00:00.000Z",
         "categories": [
           "components"
         ],
         "tags": [
-          "btn"
+          "svg"
         ]
       },
-      "regularPath": "/components/btn.html",
-      "relativePath": "components/btn.md",
-      "key": "v-98e0ed38",
-      "path": "/components/btn.html"
-    },
-    {
-      "title": "clip-path",
-      "frontmatter": {
-        "title": "clip-path",
-        "date": "2021-12-24T00:00:00.000Z",
-        "categories": [
-          "components"
-        ],
-        "tags": [
-          "css"
-        ]
-      },
-      "regularPath": "/components/clip.html",
-      "relativePath": "components/clip.md",
-      "key": "v-3a78ea44",
-      "path": "/components/clip.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "利用clip-path将一块区域裁剪，但是任然占据高度，没有脱离文档流，算是做这种类型的盒子的一种思路吧",
-          "slug": "利用clip-path将一块区域裁剪-但是任然占据高度-没有脱离文档流-算是做这种类型的盒子的一种思路吧"
-        }
-      ]
+      "regularPath": "/components/Dashboard.html",
+      "relativePath": "components/Dashboard.md",
+      "key": "v-4014f6f4",
+      "path": "/components/Dashboard.html"
     },
     {
       "title": "echarts拖拽关系图",
@@ -199,6 +134,105 @@ export const siteData = {
       ]
     },
     {
+      "title": "文字效果",
+      "frontmatter": {
+        "title": "文字效果",
+        "date": "2021-12-24T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "css"
+        ]
+      },
+      "regularPath": "/components/text.html",
+      "relativePath": "components/text.md",
+      "key": "v-c4c2b404",
+      "path": "/components/text.html"
+    },
+    {
+      "title": "一些奇怪的按钮",
+      "frontmatter": {
+        "title": "一些奇怪的按钮",
+        "date": "2021-11-07T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "btn"
+        ]
+      },
+      "regularPath": "/components/btn.html",
+      "relativePath": "components/btn.md",
+      "key": "v-98e0ed38",
+      "path": "/components/btn.html"
+    },
+    {
+      "title": "拖拽盒子",
+      "frontmatter": {
+        "title": "拖拽盒子",
+        "date": "2021-06-07T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "drag"
+        ]
+      },
+      "regularPath": "/components/DragBox.html",
+      "relativePath": "components/DragBox.md",
+      "key": "v-28ef0e24",
+      "path": "/components/DragBox.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "推荐使用vue-draggable",
+          "slug": "推荐使用vue-draggable"
+        }
+      ]
+    },
+    {
+      "title": "clip-path",
+      "frontmatter": {
+        "title": "clip-path",
+        "date": "2021-12-24T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "css"
+        ]
+      },
+      "regularPath": "/components/clip.html",
+      "relativePath": "components/clip.md",
+      "key": "v-3a78ea44",
+      "path": "/components/clip.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "利用clip-path将一块区域裁剪，但是任然占据高度，没有脱离文档流，算是做这种类型的盒子的一种思路吧",
+          "slug": "利用clip-path将一块区域裁剪-但是任然占据高度-没有脱离文档流-算是做这种类型的盒子的一种思路吧"
+        }
+      ]
+    },
+    {
+      "title": "优惠券",
+      "frontmatter": {
+        "title": "优惠券",
+        "date": "2021-01-22T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "ticket"
+        ]
+      },
+      "regularPath": "/components/ticket.html",
+      "relativePath": "components/ticket.md",
+      "key": "v-7d378f1e",
+      "path": "/components/ticket.html"
+    },
+    {
       "title": "快速启动！",
       "frontmatter": {
         "title": "快速启动！",
@@ -222,40 +256,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "文字效果",
-      "frontmatter": {
-        "title": "文字效果",
-        "date": "2021-12-24T00:00:00.000Z",
-        "categories": [
-          "components"
-        ],
-        "tags": [
-          "css"
-        ]
-      },
-      "regularPath": "/components/text.html",
-      "relativePath": "components/text.md",
-      "key": "v-c4c2b404",
-      "path": "/components/text.html"
-    },
-    {
-      "title": "优惠券",
-      "frontmatter": {
-        "title": "优惠券",
-        "date": "2021-01-22T00:00:00.000Z",
-        "categories": [
-          "components"
-        ],
-        "tags": [
-          "ticket"
-        ]
-      },
-      "regularPath": "/components/ticket.html",
-      "relativePath": "components/ticket.md",
-      "key": "v-7d378f1e",
-      "path": "/components/ticket.html"
-    },
-    {
       "title": "game",
       "frontmatter": {
         "title": "game",
@@ -273,11 +273,21 @@ export const siteData = {
       "path": "/game/"
     },
     {
-      "frontmatter": {},
-      "regularPath": "/pages/ticket.html",
-      "relativePath": "pages/ticket.md",
-      "key": "v-1ae1d77c",
-      "path": "/pages/ticket.html"
+      "title": "game",
+      "frontmatter": {
+        "title": "game",
+        "date": "2023-06-16T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "kunkun"
+        ]
+      },
+      "regularPath": "/kunkun/",
+      "relativePath": "kunkun/README.md",
+      "key": "v-e5ffd4a6",
+      "path": "/kunkun/"
     },
     {
       "title": "About Me",
@@ -295,6 +305,13 @@ export const siteData = {
       "relativePath": "pages/README.md",
       "key": "v-b80bdf66",
       "path": "/pages/"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/pages/ticket.html",
+      "relativePath": "pages/ticket.md",
+      "key": "v-1ae1d77c",
+      "path": "/pages/ticket.html"
     },
     {
       "frontmatter": {
@@ -335,20 +352,11 @@ export const siteData = {
     {
       "frontmatter": {
         "layout": "Tag",
-        "title": "drag Tags"
+        "title": "echarts Tags"
       },
-      "regularPath": "/tag/drag/",
-      "key": "v-151c8dde",
-      "path": "/tag/drag/"
-    },
-    {
-      "frontmatter": {
-        "layout": "Tag",
-        "title": "btn Tags"
-      },
-      "regularPath": "/tag/btn/",
-      "key": "v-323c7a06",
-      "path": "/tag/btn/"
+      "regularPath": "/tag/echarts/",
+      "key": "v-119ea9c2",
+      "path": "/tag/echarts/"
     },
     {
       "frontmatter": {
@@ -362,11 +370,20 @@ export const siteData = {
     {
       "frontmatter": {
         "layout": "Tag",
-        "title": "echarts Tags"
+        "title": "btn Tags"
       },
-      "regularPath": "/tag/echarts/",
-      "key": "v-119ea9c2",
-      "path": "/tag/echarts/"
+      "regularPath": "/tag/btn/",
+      "key": "v-323c7a06",
+      "path": "/tag/btn/"
+    },
+    {
+      "frontmatter": {
+        "layout": "Tag",
+        "title": "drag Tags"
+      },
+      "regularPath": "/tag/drag/",
+      "key": "v-151c8dde",
+      "path": "/tag/drag/"
     },
     {
       "frontmatter": {
@@ -376,6 +393,15 @@ export const siteData = {
       "regularPath": "/tag/ticket/",
       "key": "v-c1e2ae8e",
       "path": "/tag/ticket/"
+    },
+    {
+      "frontmatter": {
+        "layout": "Tag",
+        "title": "kunkun Tags"
+      },
+      "regularPath": "/tag/kunkun/",
+      "key": "v-4fe80e76",
+      "path": "/tag/kunkun/"
     },
     {
       "frontmatter": {
@@ -399,6 +425,10 @@ export const siteData = {
       {
         "text": "游戏",
         "link": "/game/"
+      },
+      {
+        "text": "坤坤工具",
+        "link": "/kunkun/"
       }
     ],
     "sidebar": {
