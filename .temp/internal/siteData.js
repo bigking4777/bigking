@@ -8,6 +8,30 @@ export const siteData = {
   "headTags": [],
   "pages": [
     {
+      "title": "拖拽盒子",
+      "frontmatter": {
+        "title": "拖拽盒子",
+        "date": "2021-06-07T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "drag"
+        ]
+      },
+      "regularPath": "/components/DragBox.html",
+      "relativePath": "components/DragBox.md",
+      "key": "v-28ef0e24",
+      "path": "/components/DragBox.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "推荐使用vue-draggable",
+          "slug": "推荐使用vue-draggable"
+        }
+      ]
+    },
+    {
       "title": "Home",
       "frontmatter": {
         "home": true,
@@ -28,21 +52,28 @@ export const siteData = {
       "path": "/"
     },
     {
-      "title": "svg",
+      "title": "clip-path",
       "frontmatter": {
-        "title": "svg",
-        "date": "2021-12-13T00:00:00.000Z",
+        "title": "clip-path",
+        "date": "2021-12-24T00:00:00.000Z",
         "categories": [
           "components"
         ],
         "tags": [
-          "svg"
+          "css"
         ]
       },
-      "regularPath": "/components/Dashboard.html",
-      "relativePath": "components/Dashboard.md",
-      "key": "v-4014f6f4",
-      "path": "/components/Dashboard.html"
+      "regularPath": "/components/clip.html",
+      "relativePath": "components/clip.md",
+      "key": "v-3a78ea44",
+      "path": "/components/clip.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "利用clip-path将一块区域裁剪，但是任然占据高度，没有脱离文档流，算是做这种类型的盒子的一种思路吧",
+          "slug": "利用clip-path将一块区域裁剪-但是任然占据高度-没有脱离文档流-算是做这种类型的盒子的一种思路吧"
+        }
+      ]
     },
     {
       "title": "echarts拖拽关系图",
@@ -134,23 +165,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "文字效果",
-      "frontmatter": {
-        "title": "文字效果",
-        "date": "2021-12-24T00:00:00.000Z",
-        "categories": [
-          "components"
-        ],
-        "tags": [
-          "css"
-        ]
-      },
-      "regularPath": "/components/text.html",
-      "relativePath": "components/text.md",
-      "key": "v-c4c2b404",
-      "path": "/components/text.html"
-    },
-    {
       "title": "一些奇怪的按钮",
       "frontmatter": {
         "title": "一些奇怪的按钮",
@@ -166,71 +180,6 @@ export const siteData = {
       "relativePath": "components/btn.md",
       "key": "v-98e0ed38",
       "path": "/components/btn.html"
-    },
-    {
-      "title": "拖拽盒子",
-      "frontmatter": {
-        "title": "拖拽盒子",
-        "date": "2021-06-07T00:00:00.000Z",
-        "categories": [
-          "components"
-        ],
-        "tags": [
-          "drag"
-        ]
-      },
-      "regularPath": "/components/DragBox.html",
-      "relativePath": "components/DragBox.md",
-      "key": "v-28ef0e24",
-      "path": "/components/DragBox.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "推荐使用vue-draggable",
-          "slug": "推荐使用vue-draggable"
-        }
-      ]
-    },
-    {
-      "title": "clip-path",
-      "frontmatter": {
-        "title": "clip-path",
-        "date": "2021-12-24T00:00:00.000Z",
-        "categories": [
-          "components"
-        ],
-        "tags": [
-          "css"
-        ]
-      },
-      "regularPath": "/components/clip.html",
-      "relativePath": "components/clip.md",
-      "key": "v-3a78ea44",
-      "path": "/components/clip.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "利用clip-path将一块区域裁剪，但是任然占据高度，没有脱离文档流，算是做这种类型的盒子的一种思路吧",
-          "slug": "利用clip-path将一块区域裁剪-但是任然占据高度-没有脱离文档流-算是做这种类型的盒子的一种思路吧"
-        }
-      ]
-    },
-    {
-      "title": "优惠券",
-      "frontmatter": {
-        "title": "优惠券",
-        "date": "2021-01-22T00:00:00.000Z",
-        "categories": [
-          "components"
-        ],
-        "tags": [
-          "ticket"
-        ]
-      },
-      "regularPath": "/components/ticket.html",
-      "relativePath": "components/ticket.md",
-      "key": "v-7d378f1e",
-      "path": "/components/ticket.html"
     },
     {
       "title": "快速启动！",
@@ -254,6 +203,40 @@ export const siteData = {
           "slug": "如果你想cdn引入"
         }
       ]
+    },
+    {
+      "title": "优惠券",
+      "frontmatter": {
+        "title": "优惠券",
+        "date": "2021-01-22T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "ticket"
+        ]
+      },
+      "regularPath": "/components/ticket.html",
+      "relativePath": "components/ticket.md",
+      "key": "v-7d378f1e",
+      "path": "/components/ticket.html"
+    },
+    {
+      "title": "文字效果",
+      "frontmatter": {
+        "title": "文字效果",
+        "date": "2021-12-24T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "css"
+        ]
+      },
+      "regularPath": "/components/text.html",
+      "relativePath": "components/text.md",
+      "key": "v-c4c2b404",
+      "path": "/components/text.html"
     },
     {
       "title": "game",
@@ -314,6 +297,23 @@ export const siteData = {
       "path": "/pages/ticket.html"
     },
     {
+      "title": "svg",
+      "frontmatter": {
+        "title": "svg",
+        "date": "2021-12-13T00:00:00.000Z",
+        "categories": [
+          "components"
+        ],
+        "tags": [
+          "svg"
+        ]
+      },
+      "regularPath": "/components/Dashboard.html",
+      "relativePath": "components/Dashboard.md",
+      "key": "v-4014f6f4",
+      "path": "/components/Dashboard.html"
+    },
+    {
       "frontmatter": {
         "layout": "Tags",
         "title": "Tags"
@@ -343,20 +343,11 @@ export const siteData = {
     {
       "frontmatter": {
         "layout": "Tag",
-        "title": "svg Tags"
+        "title": "drag Tags"
       },
-      "regularPath": "/tag/svg/",
-      "key": "v-322cf816",
-      "path": "/tag/svg/"
-    },
-    {
-      "frontmatter": {
-        "layout": "Tag",
-        "title": "echarts Tags"
-      },
-      "regularPath": "/tag/echarts/",
-      "key": "v-119ea9c2",
-      "path": "/tag/echarts/"
+      "regularPath": "/tag/drag/",
+      "key": "v-151c8dde",
+      "path": "/tag/drag/"
     },
     {
       "frontmatter": {
@@ -370,20 +361,20 @@ export const siteData = {
     {
       "frontmatter": {
         "layout": "Tag",
+        "title": "echarts Tags"
+      },
+      "regularPath": "/tag/echarts/",
+      "key": "v-119ea9c2",
+      "path": "/tag/echarts/"
+    },
+    {
+      "frontmatter": {
+        "layout": "Tag",
         "title": "btn Tags"
       },
       "regularPath": "/tag/btn/",
       "key": "v-323c7a06",
       "path": "/tag/btn/"
-    },
-    {
-      "frontmatter": {
-        "layout": "Tag",
-        "title": "drag Tags"
-      },
-      "regularPath": "/tag/drag/",
-      "key": "v-151c8dde",
-      "path": "/tag/drag/"
     },
     {
       "frontmatter": {
@@ -402,6 +393,15 @@ export const siteData = {
       "regularPath": "/tag/kunkun/",
       "key": "v-4fe80e76",
       "path": "/tag/kunkun/"
+    },
+    {
+      "frontmatter": {
+        "layout": "Tag",
+        "title": "svg Tags"
+      },
+      "regularPath": "/tag/svg/",
+      "key": "v-322cf816",
+      "path": "/tag/svg/"
     },
     {
       "frontmatter": {

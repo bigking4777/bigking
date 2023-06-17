@@ -17,6 +17,7 @@
   "dependencies": {
     "async-validator": "^1.11.5",
     "element-ui": "^2.15.13",
+    "pikaz-excel-js": "^1.0.3",
     "vuepress-theme-reco": "^1.6.10",
     "ytdemo-ui": "^0.1.9"
   }

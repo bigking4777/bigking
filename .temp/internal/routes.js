@@ -9,6 +9,14 @@ import GlobalLayout from "E:\\laragon\\www\\ComponentDocumentation\\node_modules
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
+    name: "v-28ef0e24",
+    path: "/components/DragBox.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-28ef0e24").then(next)
+    },
+  },
+  {
     name: "v-52eef96c",
     path: "/",
     component: GlobalLayout,
@@ -21,11 +29,11 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-4014f6f4",
-    path: "/components/Dashboard.html",
+    name: "v-3a78ea44",
+    path: "/components/clip.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4014f6f4").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-3a78ea44").then(next)
     },
   },
   {
@@ -37,14 +45,6 @@ export const routes = [
     },
   },
   {
-    name: "v-c4c2b404",
-    path: "/components/text.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-c4c2b404").then(next)
-    },
-  },
-  {
     name: "v-98e0ed38",
     path: "/components/btn.html",
     component: GlobalLayout,
@@ -53,19 +53,11 @@ export const routes = [
     },
   },
   {
-    name: "v-28ef0e24",
-    path: "/components/DragBox.html",
+    name: "v-79eb2f3e",
+    path: "/components/home.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-28ef0e24").then(next)
-    },
-  },
-  {
-    name: "v-3a78ea44",
-    path: "/components/clip.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3a78ea44").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-79eb2f3e").then(next)
     },
   },
   {
@@ -77,11 +69,11 @@ export const routes = [
     },
   },
   {
-    name: "v-79eb2f3e",
-    path: "/components/home.html",
+    name: "v-c4c2b404",
+    path: "/components/text.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-79eb2f3e").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-c4c2b404").then(next)
     },
   },
   {
@@ -129,6 +121,14 @@ export const routes = [
     },
   },
   {
+    name: "v-4014f6f4",
+    path: "/components/Dashboard.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4014f6f4").then(next)
+    },
+  },
+  {
     name: "v-b1564aac",
     path: "/tag/",
     component: GlobalLayout,
@@ -168,30 +168,17 @@ export const routes = [
     redirect: "/timeline/"
   },
   {
-    name: "v-322cf816",
-    path: "/tag/svg/",
+    name: "v-151c8dde",
+    path: "/tag/drag/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-322cf816").then(next)
+      ensureAsyncComponentsLoaded("Tag", "v-151c8dde").then(next)
     },
-    meta: {"pid":"tags","id":"svg"}
+    meta: {"pid":"tags","id":"drag"}
   },
   {
-    path: "/tag/svg/index.html",
-    redirect: "/tag/svg/"
-  },
-  {
-    name: "v-119ea9c2",
-    path: "/tag/echarts/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-119ea9c2").then(next)
-    },
-    meta: {"pid":"tags","id":"echarts"}
-  },
-  {
-    path: "/tag/echarts/index.html",
-    redirect: "/tag/echarts/"
+    path: "/tag/drag/index.html",
+    redirect: "/tag/drag/"
   },
   {
     name: "v-323b9794",
@@ -207,6 +194,19 @@ export const routes = [
     redirect: "/tag/css/"
   },
   {
+    name: "v-119ea9c2",
+    path: "/tag/echarts/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-119ea9c2").then(next)
+    },
+    meta: {"pid":"tags","id":"echarts"}
+  },
+  {
+    path: "/tag/echarts/index.html",
+    redirect: "/tag/echarts/"
+  },
+  {
     name: "v-323c7a06",
     path: "/tag/btn/",
     component: GlobalLayout,
@@ -218,19 +218,6 @@ export const routes = [
   {
     path: "/tag/btn/index.html",
     redirect: "/tag/btn/"
-  },
-  {
-    name: "v-151c8dde",
-    path: "/tag/drag/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Tag", "v-151c8dde").then(next)
-    },
-    meta: {"pid":"tags","id":"drag"}
-  },
-  {
-    path: "/tag/drag/index.html",
-    redirect: "/tag/drag/"
   },
   {
     name: "v-c1e2ae8e",
@@ -257,6 +244,19 @@ export const routes = [
   {
     path: "/tag/kunkun/index.html",
     redirect: "/tag/kunkun/"
+  },
+  {
+    name: "v-322cf816",
+    path: "/tag/svg/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Tag", "v-322cf816").then(next)
+    },
+    meta: {"pid":"tags","id":"svg"}
+  },
+  {
+    path: "/tag/svg/index.html",
+    redirect: "/tag/svg/"
   },
   {
     name: "v-acfe980a",

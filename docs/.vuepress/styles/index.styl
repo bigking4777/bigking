@@ -1,0 +1,39 @@
+.vxe-table, .el-table, .el-date-table   
+  table
+    border-collapse unset
+    margin unset
+    display inherit
+    overflow-x unset
+  tr
+    border-top unset
+    &:nth-child(2n)
+      background-color unset
+  th, td
+    border unset
+    padding unset
+
+.el-date-picker table {
+    table-layout: fixed;
+    width: 100%;
+    tbody{
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+    tr{
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+    th{
+        padding: 5px;
+        width: 41px;
+    color: #606266;
+    font-weight: 400;
+    border-bottom: solid 1px #EBEEF5;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+    }
+}

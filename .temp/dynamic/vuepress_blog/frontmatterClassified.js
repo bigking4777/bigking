@@ -3,12 +3,21 @@
  */
 export default {
   "tags": {
-    "svg": {
-      "key": "svg",
+    "drag": {
+      "key": "drag",
       "scope": "tags",
-      "path": "/tag/svg/",
+      "path": "/tag/drag/",
       "pageKeys": [
-        "v-4014f6f4"
+        "v-28ef0e24"
+      ]
+    },
+    "css": {
+      "key": "css",
+      "scope": "tags",
+      "path": "/tag/css/",
+      "pageKeys": [
+        "v-3a78ea44",
+        "v-c4c2b404"
       ]
     },
     "echarts": {
@@ -19,29 +28,12 @@ export default {
         "v-dead3780"
       ]
     },
-    "css": {
-      "key": "css",
-      "scope": "tags",
-      "path": "/tag/css/",
-      "pageKeys": [
-        "v-c4c2b404",
-        "v-3a78ea44"
-      ]
-    },
     "btn": {
       "key": "btn",
       "scope": "tags",
       "path": "/tag/btn/",
       "pageKeys": [
         "v-98e0ed38"
-      ]
-    },
-    "drag": {
-      "key": "drag",
-      "scope": "tags",
-      "path": "/tag/drag/",
-      "pageKeys": [
-        "v-28ef0e24"
       ]
     },
     "ticket": {
@@ -61,6 +53,14 @@ export default {
       "pageKeys": [
         "v-e5ffd4a6"
       ]
+    },
+    "svg": {
+      "key": "svg",
+      "scope": "tags",
+      "path": "/tag/svg/",
+      "pageKeys": [
+        "v-4014f6f4"
+      ]
     }
   },
   "categories": {
@@ -69,16 +69,16 @@ export default {
       "scope": "categories",
       "path": "/categories/components/",
       "pageKeys": [
-        "v-4014f6f4",
-        "v-dead3780",
-        "v-c4c2b404",
-        "v-98e0ed38",
         "v-28ef0e24",
         "v-3a78ea44",
+        "v-dead3780",
+        "v-98e0ed38",
         "v-7d378f1e",
+        "v-c4c2b404",
         "v-53a283ed",
         "v-e5ffd4a6",
-        "v-b80bdf66"
+        "v-b80bdf66",
+        "v-4014f6f4"
       ]
     }
   },
